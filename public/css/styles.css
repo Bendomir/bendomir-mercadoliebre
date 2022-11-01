@@ -1,0 +1,520 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #ebebeb!important;
+    width: 100%;
+}
+
+.banner img {
+    width: 100%;
+}
+
+
+/* -------- HEADER -------- */
+header {
+    background-color: #EAC926;
+    padding: 20px 0px;
+}
+
+
+.top-header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 10px;
+}
+
+
+.top-header .logo{
+    width: 50%;
+
+}
+.top-header .search {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+.search button{
+    position: relative;
+    right: 22px;
+    border-radius:25px;
+	border:0px solid grey;
+}
+label {
+    width: 100%;
+    padding-left: 5px;
+    }
+input {
+
+    width: 80%;
+    }
+
+.top-header p{
+    padding-top: 10px;
+    }
+
+.nav-bar {
+    display: none;
+}
+
+
+.burger-menu {
+    text-align: center;
+}
+.burger-menu i {
+    color: white;
+    border: 1px blue solid;
+    background-color: blue;
+    padding: 7.5px;
+    border-radius: 5px;
+}
+
+/* -------- MAIN -------- */
+main {
+    width: 90%;
+    margin: 0% auto;
+}
+main section h3 {
+    font-size: 24px;
+    color: #666;
+    margin: 3% 0% 3% 5%;
+    display: block;
+}
+
+
+
+.item {
+    width: 100%;
+    background-color: #fff;    
+    text-align: center;
+    margin: 5% 0%;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+.item img{
+    width: 100%;
+    height: 100%;
+    margin: auto;
+}
+.item-detail{
+    border: 1px solid #ebebeb;
+    padding: 15px;
+    text-align: left;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+
+.fa-truck{
+    display: block!important;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #fff;
+    border-radius: 50%;
+    color: #39b54a;
+    position: absolute;
+    right: 25px;
+    top: -15px;
+
+}
+
+.item-detail-data{
+    display: flex;
+    flex-direction: row;
+}
+
+p.precio {
+    font-size: 18px;
+    display: flex;
+    flex-direction: row;
+    flex-grow: 0.3; 
+
+}
+p.desc {
+    font-size: 16px;
+    color: green;
+    display: flex;
+    flex-direction: row;
+    flex-grow: 0.7;
+}
+.title-item {
+    display: none;
+    color: #666;
+    font-size: 16px;
+}
+
+/* -------- FOOTER -------- */
+
+footer {
+    background-color: white;
+    text-align: center;
+    padding: 25px 0px;
+}
+
+footer section i{
+    font-size: 2em;
+    color: rgb(0, 89, 255);
+}
+.item-detail h4{
+    color: #666;
+    font-weight: 400;
+}
+footer p {
+    font-size: 12px;
+    color: #666;
+}
+
+
+
+/* ------------REGISTRO y LOGIN------------ */
+
+.register {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+} 
+
+.login {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+} 
+
+
+.register h3, .login h3 {
+    text-align: center;
+    padding: 15px;
+}
+h5 {
+    padding: 10px;
+}
+
+.register form{
+    text-align: center;
+    border: rgb(178, 199, 245) 5px solid;
+    margin: 10px 0px;
+    border-radius: 20px;
+    background-color: whitesmoke
+}
+
+.login form{
+    text-align: center;
+    border: rgb(178, 199, 245) 5px solid;
+    margin: 10px 0px;
+    border-radius: 20px;
+    background-color: whitesmoke;
+    width: 90%;
+}
+
+.user-data{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 5px;
+}
+
+.user-data-preferences label{
+    text-align: left;
+    display: flex;
+    margin:  0% 0% 0% 10%;
+}
+
+
+.user-data-perfil, .user-data-preferences{
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.user-data-perfil label, .user-data-preferences label{
+    width: 150px;
+    }
+
+.user-data-perfil input, .user-data-preferences input{
+width: 20px;
+} 
+
+.user-data-buttons  button {
+    width: 100px;
+    margin: 12px;
+}
+
+.user-data-buttons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+
+}
+
+.login-button {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+
+}
+
+
+
+.login-button button {
+	background-color:#44c767;
+	border-radius:28px;
+	border:1px solid #18ab29;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:17px;
+	padding:10px 20px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #2f6627;
+    margin-top: 10px;
+    transition: all 1s;
+}
+.login-button button:hover {
+	background-color:#0022AA;
+    border:1px solid #0022AA;
+}
+.login-button button:active {
+	position:relative;
+	top:1px;
+}
+
+
+.user-data input, .login-data input {
+    line-height: 28px;
+    border: 2px solid transparent;
+    border-bottom-color: #777;
+    border-radius: 1rem;
+    padding: .2rem 0;
+    outline: none;
+    background-color: transparent;
+    color: #0d0c22;
+    transition: .3s cubic-bezier(0.645, 0.045, 0.355, 1);
+    outline: none;
+    padding: .2rem 1rem;
+    border-radius: 1rem;
+    border-color: #7a9cc6;
+   }
+   
+
+   input{
+    outline: none;
+    padding: .2rem 1rem;
+    border-radius: 1rem;
+    border-color: #7a9cc6;
+   }
+
+input:focus , input:hover {
+    outline: none;
+    padding: .2rem 1rem;
+    border-radius: 1rem;
+    border-color: #7a9cc6;
+   }
+
+   
+input::placeholder {
+    color: #777;
+   }
+   
+input:focus::placeholder {
+    opacity: 0;
+    transition: opacity .3s;
+   }
+   
+
+
+
+ @media (min-width: 365px){
+
+    .top-header{
+        display: flex;
+    }
+
+    .top-header .logo{
+        width: 30%;
+        justify-content: center;
+        }
+    .top-header .search{
+        text-align: center;
+        width: 35%;
+        }
+
+    .top-header p{
+        width: 35%;
+        padding-right: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 10px;
+        }
+
+    .title-item{
+        display: block;
+        visibility: hidden;
+    }
+
+    .nav-bar{
+        font-size: 12px;
+        display: flex;
+        justify-content: space-between;
+        padding: 3% 0% 0% 0%;
+    }
+
+    .nav-shop{
+        display: flex;
+        width: 40%;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .nav-user{
+        display: flex;
+        width: 40%;
+        flex-direction: row;
+        justify-content: space-around;
+
+    }
+
+    .burger-menu{
+        display: none;
+    }
+
+    .items {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .item{
+        margin: 1%;
+        width:47.5%;
+        height: 30%;
+        margin: 1%;
+    }
+
+    .title-item {
+        display: block;
+    }
+
+    .benefits {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .tarjeta-efectivo, .envio-gratis, .seguridad{
+        width: 30%;
+        padding: 25px;
+    }
+
+}
+
+
+
+
+@media (min-width: 770px){
+
+    .top-header .logo{
+        width: 30%;
+        }
+    .top-header .search{
+        width: 40%;
+        }
+
+    .top-header p{
+        width: 30%;
+        font-size: 16px;
+        }
+
+        .nav-bar{
+            font-size: 16px;
+        }
+
+    
+        .nav-shop{
+            width: 30%;
+        }
+        .nav-user{
+            width: 25%;
+        }
+
+
+    article.item{
+        width: 22.5%;
+        height: 30%;
+
+    }
+
+    .fa-truck{
+        transition: all 500ms;    
+    }
+    .item:hover .fa-truck{
+        transform: rotate(-90deg)        
+    }
+
+    .item{
+        transition: all 500ms;    
+        }
+    .item:hover {
+        box-shadow: 0px 0px 11px 3px rgba(0,0,0,0.75);      
+    }
+
+
+    .title-item {
+        transition: all 150ms;
+        }
+    .item:hover .title-item{
+        visibility: visible;        
+    }
+
+    .tarjeta-efectivo i{
+    transition: all 500ms;
+    }
+
+    .tarjeta-efectivo:hover i{
+        color: #39b54a;        
+    }
+
+    .envio-gratis i{
+        transition: all 500ms;
+    }
+    
+    .envio-gratis:hover i{
+        color: #39b54a;        
+    }
+
+    .seguridad i{
+        transition: all 500ms;
+    }
+        
+    .seguridad:hover i{
+        color: #39b54a;        
+    } 
+
+
+
+    .user-data-preferences label{
+        width: 40%;
+    }
+
+    .login form{
+        width: 40%;
+    }
+    .login-data input{
+        width: 60%;
+        margin: 2px 0px;
+    }
+}
