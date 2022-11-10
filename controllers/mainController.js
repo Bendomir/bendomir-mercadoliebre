@@ -1,22 +1,27 @@
-const express = require('express');
-const app = express();
 const path = require('path');
-const mainRouter = require ('./routers/mainRouter')
-
-app.use(express.static('public'));
-
-app.set('views', path.resolve(__dirname, 'views'));
-app.set('view engine', 'ejs');
-
-let PORT = process.env.PORT || 3000
 
 
-app.listen(PORT, () => console.log('Fiesta, Carnaval en ' + PORT));
+const mainController = {
+
+    index: (req, res) => {
+
+        res.render('index', products);
+    },
+
+    login: (req, res) => {
+
+        res.render(path.resolve('./views/login.ejs'));
+    },
+
+    register: (req, res) => {
+
+        res.render(path.resolve('./views/register.ejs'));
+    }
 
 
+}
 
-app.use('/', mainRouter)
-
+module.exports = mainController;
 
 
 let products = [
